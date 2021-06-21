@@ -20,4 +20,4 @@ This is a Chrome extension to mark customized events for the specific streaming/
 5. Click "Submit Bookmarks" button, and it will send the bookmarks to your backend, let's say your slack channel, and clear the local states including the table and variables.
 
 ## Demo
-![caption](https://youtu.be/V8S7ZT-YSAM)
+![caption](https://youtube.com/embed/V8S7ZT-YSAM)
