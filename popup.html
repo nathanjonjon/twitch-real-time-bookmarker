@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel='icon' href="images/image128.png" type='image/x-icon' />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/popup_table.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-stack-wrapper">
+            <div class="title-logo">
+                <div class="logo-wrapper"><img src=images/image128.png></div>
+                <div class="title-wrapper"><h1>Twitch Real-time Bookmarker</h1></div>
+            </div>  
+            <div id="stream_info">
+                <div class="username-wrapper"><h1 id="username"></h1></div>
+            </div>
+            <div class="table-wrapper">
+                <table id="bookmarks_table" class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Bookmark Title</th>
+                            <th>Timestamp</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="button-wrapper"><button id="send_bookmarks"> Submit Bookmarks </button>
+            </div>
+        </div>
+    </div>
+
+<script src="js/popup.js"> </script>
+</body>
+
+</html>

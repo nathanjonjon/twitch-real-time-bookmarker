@@ -1,0 +1,47 @@
+{
+  "name": "Twitch Real-time Bookmarker",
+  "version": "1.0",
+  "description": "Mark any interested event whenever you want",
+  "manifest_version": 2,
+  "icons": {
+    "16": "images/image16.png",
+    "32": "images/image32.png",
+    "64": "images/image64.png",
+    "128": "images/image128.png"
+  },
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "activeTab","storage", "https://api.twitch.tv/helix/streams"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/image16.png",
+      "32": "images/image32.png",
+      "64": "images/image64.png",
+      "128": "images/image128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.twitch.tv/*"
+      ],
+      "js": [
+        "js/content.js"
+      ]
+    }
+  ],
+  "commands": {
+    "pick-bookmark": {
+      "suggested_key": {
+        "default": "Ctrl+B",
+        "mac": "Ctrl+B"
+      },
+      "description": "pick the current timestamp in a local list"
+    }
+  }
+}

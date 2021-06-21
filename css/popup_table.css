@@ -1,0 +1,207 @@
+/* Master Styles */
+
+body {
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+::placeholder {
+    color: #6780cb;
+    opacity: 1;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Page Styles -- Cover */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1rem;
+  }
+  
+  .container > * {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .container > :first-child:not(main-stack-wrapper) {
+    margin-top: 0;
+  }
+  
+  .container > :last-child:not(main-stack-wrapper) {
+    margin-bottom: 0;
+  }
+  
+  .container > main-stack-wrapper {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+.container {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Stack Layout */
+
+.main-stack-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+ /*   background-color: rgb(0,0,0,.75); */
+    min-width: 100vw;
+}
+  
+  .main-stack-wrapper > * {
+    margin-top: 1em;
+    margin-bottom: 1em;
+} 
+
+.title-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    gap: 1rem;
+ /*   text-align: center; */
+}
+
+
+/* Element Styles */
+
+.logo-wrapper img {
+    height: 3rem;
+    width: 3rem;
+}
+
+.title-wrapper h1 {
+    color: #273A73;
+    font-weight: 600;
+}
+
+.username-wrapper h1 {
+    color: #000000;
+    font-weight: 400;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1em;
+    font-family: sans-serif;
+    min-width: 350px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table tbody clip-title {
+    min-width: 200px;
+}
+
+.styled-table thead tr {
+    background-color: #464506ce;
+    color: #ffffff;
+    text-align: center;
+}
+
+.styled-table tbody tr {
+    border-bottom: thin solid #464506ce;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: medium solid #464506ce;
+}
+
+.headline-wrapper h1 {
+    font-weight: 600;
+    color: white;
+}
+
+/* should be any button on the site */ 
+.button-wrapper button {
+    background-color: #464506ce;
+    color: white;
+    font-weight: 600;
+    font-size: large;
+    height: 3rem;
+    border-radius: 1.5rem;
+    border: none;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.button-wrapper button {
+    transition-duration: 0.4s;
+}
+  
+.button-wrapper button:hover {
+    background-color: #bd7727ce;
+}
+
+.button-wrapper button:active {
+      border: none;
+      background-color: #bd7727ce;
+}
+
+.button-wrapper button:focus {
+      outline: none;
+}
+
+/* this is for any text you put below the button -- change the color */
+.button-wrapper h2 {
+    font-weight: 600;
+    color: white;
+}
+
+/* small inline buttons */ 
+.inline-button-wrapper button {
+    background-color: #bd7727ce;
+    color: white;
+    height: 1.5rem;
+    border: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.inline-button-wrapper button {
+    transition-duration: 0.4s;
+}
+  
+.inline-button-wrapper button:hover {
+    background-color: #bd7727ce;
+}
+
+.inline-button-wrapper button:active {
+      border: none;
+      background-color: #bd7727ce;
+}
+
+.inline-button-wrapper button:focus {
+      outline: none;
+}
+
+/* more stuff if you want to add an input box */
+
+/*should be any input form on the site */
+.input-form-wrapper input {
+    font-weight: 600;
+    font-size: large;
+    color: #0f1527;
+    height: 3rem;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 1.5rem;
+    margin-right: 1rem;
+}
+
+.input-form-wrapper input:focus {
+    outline: none;
+}
