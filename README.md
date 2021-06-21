@@ -20,4 +20,4 @@ This is a Chrome extension to mark customized events for the specific streaming/
 5. Click "Submit Bookmarks" button, and it will send the bookmarks to your backend, let's say your slack channel, and clear the local states including the table and variables.
 
 ## Demo
-<iframe width="560" height="315" src="https://www.youtube.com/embed/V8S7ZT-YSAM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![SC2 Video](https://img.youtube.com/vi/V8S7ZT-YSAM/0.jpg)](https://www.youtube.com/embed/V8S7ZT-YSAM)
