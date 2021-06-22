@@ -14,7 +14,7 @@
     "persistent": false
   },
   "permissions": [
-    "activeTab","storage", "https://api.twitch.tv/helix/streams"
+    "activeTab","storage", "tabs", "https://api.twitch.tv/*", "https://hooks.slack.com/services/*"
   ],
   "browser_action": {
     "default_popup": "popup.html",
