@@ -35,11 +35,25 @@ async function getCurrentTab() {
 }
 
 chrome.tabs.onActivated.addListener(function (activeInfo) {
-    console.log("tab changes");
+    // reset the username on tab change
+    chrome.storage.sync.set({ "curr_username": "" }, function () {
+        console.log("reset username to empty string on tab change");
+    });
     chrome.tabs.executeScript(activeInfo.tabId, {
         file: 'js/content.js',
     });
 });
+
+chrome.tabs.onUpdated.addListener(function (activeInfo) {
+    // reset the username on tab change
+    chrome.storage.sync.set({ "curr_username": "" }, function () {
+        console.log("reset username to empty string on tab change");
+    });
+    chrome.tabs.executeScript(activeInfo.tabId, {
+        file: 'js/content.js',
+    });
+});
+
 
 chrome.commands.onCommand.addListener(function (command) {
 
