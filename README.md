@@ -16,9 +16,8 @@ This is a Chrome extension to mark customized events for the specific streaming/
 1. An user who is in the on-live streaming webpage, such as https://www.twitch.tv/beyondthesummit, with this plug-in enabled and running can record a bookmark with the current played time since the stream started on command "ctrl + B"
 2. The label of a bookmark is "untitled" by default, and users are free to edit the content by re-writing the texts and pressing enter to de-focus the text box.
 3. If desired, users can also click the "delete" button and remove a row in the table.
-4. It's totally fine if a user close the popup window and open it again; the bookmarks will not disappear. Only when you refresh the webpage or navigate to another live stream will the bookmarks be reset.
-5. It's also supported if a user wants to navigate between different tabs of live stream webpage with the correct link format. Users won't lose bookmarks while navigating back and forth; instead, the popup window displays the what've recoreded correspondingly and instantly.
-6. Click "Submit Bookmarks" button, and it will send the bookmarks to your backend, let's say your slack channel, and clear the local states including the table and variables.
+4. It's totally fine if a user closes the popup window and open it again; the bookmarks will not disappear. It's also supported if a user wants to navigate between different tabs of live stream webpage with the correct link format. Users won't lose bookmarks while navigating back and forth; instead, the popup window displays what we've recoreded correspondingly and instantly.
+5. Click "Submit Bookmarks" button, and it will send the bookmarks to your backend, let's say your slack channel, and clear the local states including the table and variables.
 
 ## Demo
 [![SC2 Video](https://img.youtube.com/vi/V8S7ZT-YSAM/0.jpg)](https://www.youtube.com/embed/V8S7ZT-YSAM)
