@@ -63,7 +63,7 @@ chrome.commands.onCommand.addListener(function (command) {
             chrome.storage.sync.get(['curr_username'], function (result) {
                 curr_username = result.curr_username;
                 if (!(curr_username in data)) {
-                    alert(`Data of ${curr_username}'s live stream might be lost.`);
+                    console.log(`The live stream of ${curr_username} is not in progress or the link.`);
                     return;
                 }
                 const stream_start_utc_ms = data[curr_username]["start_at"];
